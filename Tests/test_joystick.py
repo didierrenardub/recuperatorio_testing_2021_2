@@ -15,8 +15,7 @@ def test_action_init_id():
     assert a5.id() == 1
     a6 = Action(-5)
     assert a6.id() == -5
-    a7 = Action(" ")
-    assert a7.id() == ""
+
 
 
 def test_action_perform():
