@@ -21,7 +21,6 @@ def test_action_init_id():
     assert a8.id() == 10000
 
 
-
 def test_action_perform():
     a = Action(1)
     with raises(NotImplementedError):
@@ -56,6 +55,7 @@ def test_Button_init():
     b3 = Button(None, apt1)
     assert b3.label() == "" and b3._action is not None
 
+
 def test_Button_press():
     printer = Printer()
     apt1 = ActionPrintText(1, "texto", printer)
@@ -68,6 +68,7 @@ def test_Button_press():
 def test_Joystick_init():
     j1 = Joystick()
     assert j1._buttons == []
+
 
 def test_Joystick_add_button():
     j1 = Joystick()
